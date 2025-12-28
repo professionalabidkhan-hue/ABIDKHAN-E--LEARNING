@@ -1,0 +1,32 @@
+# ----------------------------------------------------------------------
+# 1. PROTECT SENSITIVE FILES (The Vault Guard)
+# ----------------------------------------------------------------------
+<FilesMatch "^(connect\.php|config\.php)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ----------------------------------------------------------------------
+# 2. PROTECT THE SHIELD ITSELF
+# ----------------------------------------------------------------------
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# ----------------------------------------------------------------------
+# 3. SECURITY PREFERENCES
+# ----------------------------------------------------------------------
+# Prevents hackers from seeing your file list if index.php is missing
+Options -Indexes
+
+# ----------------------------------------------------------------------
+# 4. VAULT CREDENTIALS (Environment Variables)
+# ----------------------------------------------------------------------
+SetEnv DB_USER "https://freesql.com/"
+SetEnv DB_PASS "BiSMILLAh7&"
+SetEnv DB_CONNECTION_STRING "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=FREESQL_HOST)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=FREESQL_SERVICE)))"

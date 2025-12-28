@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Vault | Abid Khan E-Learning Hub</title>
+     <link rel="icon" type="image/png" href="ABID KHAN.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  footer {
+            background: rgba(0,0,0,0.5);
+            padding: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+</style>
+
+</head>
+<body>
+<footer class="mastery-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 footer-column">
+                    <img src="ABID KHAN.png" width="60" height="60" class="brand-logo-footer">
+                    <h5>Abid Khan Hub</h5>
+                    <p class="text-secondary pe-lg-5">
+                        Architecting the future of global education through technology, spiritual growth, and professional excellence.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 footer-column">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="blog.html">Expert Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 footer-column">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="contact.html">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 footer-column">
+                    <h5>Connect Globally</h5>
+                    <p class="text-secondary small mb-4">Direct access to the Hub office via WhatsApp.</p>
+                    <a href="https://wa.me/923497469638" class="btn-whatsapp-master">
+                        <span>Message on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright-section">
+                <p>© 2025 Abid Khan’s E-Learning Hub. All Rights Reserved. <br> 
+                <span style="color: var(--primary-blue); font-weight: 600;">Global Education Architect</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+

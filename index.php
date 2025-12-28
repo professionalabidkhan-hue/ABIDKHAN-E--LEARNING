@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Abid Khan E-Learning Hub - Global leader in Quranic Studies and IT Excellence.">
+<meta name="keywords" content="Abid Khan, IT Traindf,online IT Traindf Abid Khan E-Learning, Abid,E-Learning, IT Training, Quran Tutors, Job Portal">
+    <title>Abid Khan | E-Learning Hub</title>
+    <link rel="icon" type="image/png" href="ABID KHAN.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0b63d3;
+            --accent-orange: #ff9800;
+            --dark-bg: #0a0b10;
+            --glass-white: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Cinematic Background */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a1c2c 0%, #0a0b10 100%);
+            z-index: -1;
+        }
+
+        /* Navbar Masterpiece */
+        .navbar {
+            backdrop-filter: blur(10px);
+            background: rgba(10, 11, 16, 0.8) !important;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .navbar-brand img {
+            border: 2px solid var(--primary-blue);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .navbar-brand img:hover { transform: rotate(360deg) scale(1.1); }
+        .nav-link { color: rgba(255,255,255,0.7) !important; font-weight: 500; }
+        .nav-link:hover { color: var(--primary-blue) !important; }
+
+        /* Hero Section */
+        .hero-title {
+            font-weight: 800;
+            letter-spacing: -2px;
+            background: linear-gradient(to right, #fff, #0b63d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3.5rem;
+        }
+
+        /* Glass Cards */
+        .card {
+            background: var(--glass-white);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 15px 30px rgba(11, 99, 211, 0.2);
+        }
+
+        .card-body.quran { border-top: 4px solid var(--primary-blue); }
+        .card-body.it { border-top: 4px solid var(--accent-orange); }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            border: none;
+            border-radius: 12px;
+            padding: 10px 25px;
+            font-weight: 600;
+        }
+
+        /* WhatsApp Premium */
+        .whatsapp-btn {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .whatsapp-btn:hover { color: white; opacity: 0.9; transform: scale(1.02); }
+
+        footer {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="ABID KHAN.png" alt="Logo" width="45" height="45" class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
+                </ul>
+                <div class="d-flex">
+                    <a href="signin.php" class="btn btn-outline-light me-2">Sign In</a>
+                    <a href="signup.php" class="btn btn-primary">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container text-center pt-5 mt-5">
+        <div class="py-5">
+            <h1 class="hero-title">ABID KHAN E-LEARNING HUB</h1>
+            <p class="lead text-secondary">Master the Holy Quran. Code the Future. Lead the World.</p>
+            <div class="mt-4">
+                <a href="#explore" class="btn btn-primary btn-lg">Start Learning</a>
+                <a href="jobs.html" class="btn btn-outline-light btn-lg ms-3">Browse Jobs</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mb-5" id="explore">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body quran text-center">
+                        <h4 class="mt-3 text-primary">Quran Education</h4>
+                        <p class="text-secondary">Expert Male & Female trainers for Tajweed and Hifz.</p>
+                        <a href="malequrantutors.html" class="btn btn-outline-primary w-100 mt-3">Explore Tutors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body it text-center">
+                        <h4 class="mt-3 text-warning">IT & Tech</h4>
+                        <p class="text-secondary">Full-stack development, AI, and Data Science programs.</p>
+                        <a href="ITTrainer(Male).html" class="btn btn-outline-warning w-100 mt-3">Start Coding</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4 class="mt-3 text-success">Career Portal</h4>
+                        <p class="text-secondary">Global opportunities in Tech, Culinary, and Logistics.</p>
+                        <a href="jobs.html" class="btn btn-outline-success w-100 mt-3">View Openings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="mastery-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 footer-column">
+                    <img src="ABID KHAN.png" width="60" height="60" class="brand-logo-footer">
+                    <h5>Abid Khan Hub</h5>
+                    <p class="text-secondary pe-lg-5">
+                        Architecting the future of global education through technology, spiritual growth, and professional excellence.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 footer-column">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="blog.html">Expert Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 footer-column">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="contact.html">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 footer-column">
+                    <h5>Connect Globally</h5>
+                    <p class="text-secondary small mb-4">Direct access to the Hub office via WhatsApp.</p>
+                    <a href="https://wa.me/923497469638" class="btn-whatsapp-master">
+                        <span>Message on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright-section">
+                <p>© 2025 Abid Khan’s E-Learning Hub. All Rights Reserved. <br> 
+                <span style="color: var(--primary-blue); font-weight: 600;">Global Education Architect</span></p>
+            </div>
+        </div>
+    </footer>
+<script>
+    // DISABLE RIGHT CLICK
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // DISABLE KEYBOARD SHORTCUTS (F12, Ctrl+Shift+I, Ctrl+U)
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) return false; // F12
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false; // Inspect
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false; // Elements
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false; // Console
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false; // View Source
+    };
+</script>
+<style>
+    /* PREVENT TEXT SELECTION */
+    body {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

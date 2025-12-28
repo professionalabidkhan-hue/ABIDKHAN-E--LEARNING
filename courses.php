@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Vault | Abid Khan E-Learning Hub</title>
+     <link rel="icon" type="image/png" href="ABID KHAN.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #4fc3f7;
+            --quran-green: #2ecc71;
+            --accent-gold: #ffc107;
+            --safety-red: #ff5252;
+            --dark-bg: #0d0f14;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            background-image: radial-gradient(circle at top right, #1a1c2c, #0d0f14);
+            background-attachment: fixed;
+            margin: 0;
+        }
+
+        /* Navbar Style */
+        .abidkhan-navbar {
+            backdrop-filter: blur(15px);
+            background: rgba(13, 15, 20, 0.85);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 15px 5%;
+            z-index: 1000;
+        }
+
+        /* Header */
+        .vault-header {
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .vault-header h1 {
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, var(--primary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Course Grid */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding-bottom: 80px;
+        }
+
+        /* Glass Card Effect */
+        .course-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        /* Special Border for Quran Card */
+        .quran-special {
+            border: 2px solid var(--quran-green);
+            box-shadow: 0 0 20px rgba(46, 204, 113, 0.2);
+        }
+
+        .course-img-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .course-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .badge-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 5px 14px;
+            border-radius: 10px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            backdrop-filter: blur(8px);
+            z-index: 2;
+        }
+
+        /* Category Color Badges */
+        .bg-quran { background: var(--quran-green); color: #000; }
+        .bg-eng { background: #9b59b6; color: #fff; }
+        .bg-academic { background: #3498db; color: #fff; }
+        .bg-engineering { background: #e67e22; color: #fff; }
+        .bg-tech { background: var(--primary-blue); color: #000; }
+        .bg-safety { background: var(--safety-red); color: #fff; }
+
+        .course-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .course-info h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; }
+        .course-info p { font-size: 0.95rem; color: #b0b0b0; line-height: 1.6; margin-bottom: 20px; }
+
+        .btn-enroll {
+            background: var(--primary-blue);
+            color: #000;
+            border: none;
+            width: 100%;
+            padding: 14px;
+            font-weight: 700;
+            border-radius: 14px;
+            transition: 0.3s;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn-enroll:hover { background: #fff; color: #000; transform: scale(1.03); }
+
+        .quran-btn { background: var(--quran-green) !important; }
+
+        footer {
+            background: rgba(0,0,0,0.5);
+            padding: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="abidkhan-navbar d-flex justify-content-between align-items-center fixed-top">
+        <a href="index.html" class="text-decoration-none d-flex align-items-center">
+            <img src="ABID KHAN.png" width="40" height="40" class="rounded-circle me-2">
+            <span style="color:white; font-weight:800;">ABID-HUB</span>
+        </a>
+    </nav>
+
+    <header class="vault-header container">
+        <h1>Global Education Vault</h1>
+        <p class="text-secondary lead">From Spiritual Growth to Engineering Excellence.</p>
+    </header>
+
+    <main class="container">
+        <div class="course-grid">
+
+            <article class="course-card quran-special">
+                <div class="course-img-container">
+                    <span class="badge-category bg-quran">Spiritual</span>
+                    <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=800&auto=format&fit=crop" alt="Quran">
+                </div>
+                <div class="course-info">
+                    <h3 style="color: var(--quran-green);">Holy Quran Learning with Tajweed</h3>
+                    <p>Authentic Quranic education with correct pronunciation (Tajweed) and professional Qaris.</p>
+                    <a href="signup.html" class="btn-enroll quran-btn">Start Free Trial</a>
+                </div>
+            </article>
+<article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-biz">Productivity</span>
+                    <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?q=80&w=800&auto=format&fit=crop" alt="MS Office">
+                </div>
+                <div class="course-info">
+                    <h3>Microsoft Office Specialist</h3>
+                    <p>Master Word, Excel, PowerPoint, and Outlook for professional office environments.</p>
+                    <div class="mb-3"><span class="badge bg-dark">Duration: 2 Months</span></div>
+                    <a href="signup.html" class="btn-enroll">Master Office</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-tech">Foundation</span>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Basic IT">
+                </div>
+                <div class="course-info">
+                    <h3>Basic IT Fundamentals</h3>
+                    <p>Essential computer skills, hardware basics, and internet security for beginners.</p>
+                    <div class="mb-3"><span class="badge bg-dark">Duration: 3 Months</span></div>
+                    <a href="signup.html" class="btn-enroll">Start Learning</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-eng">Creative</span>
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=800&auto=format&fit=crop" alt="Graphic Design">
+                </div>
+                <div class="course-info">
+                    <h3>Professional Graphic Design</h3>
+                    <p>Master Adobe Photoshop, Illustrator, and Canva to create stunning visual identities.</p>
+                    <div class="mb-3"><span class="badge bg-dark">Duration: 6 Months</span></div>
+                    <a href="signup.html" class="btn-enroll">Start Designing</a>
+                </div>
+            </article>
+
+            <article class="course-card" style="border: 1px solid rgba(79, 195, 247, 0.4);">
+                <div class="course-img-container">
+                    <span class="badge-category bg-tech">Diploma</span>
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop" alt="IT Diploma">
+                </div>
+                <div class="course-info">
+                    <h3>Diploma in Information Tech (DIT)</h3>
+                    <p>Intermediate level diploma covering networking, web basics, and software management.</p>
+                    <div class="mb-3"><span class="badge bg-info text-dark">Duration: 6 Months</span></div>
+                    <a href="signup.html" class="btn-enroll">Apply Now</a>
+                </div>
+            </article>
+
+            <article class="course-card" style="border: 1px solid var(--accent-gold);">
+                <div class="course-img-container">
+                    <span class="badge-category bg-academic">Professional</span>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop" alt="Advanced Diploma">
+                </div>
+                <div class="course-info">
+                    <h3 style="color: var(--accent-gold);">One-Year IT Diploma (ADIT)</h3>
+                    <p>Full-scale professional certification covering Advanced Coding, Database, and Project Management.</p>
+                    <div class="mb-3"><span class="badge bg-warning text-dark">Duration: 1 Year (Full Track)</span></div>
+                    <a href="signup.html" class="btn-enroll" style="background: var(--accent-gold);">Enrol for Year</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-eng">Language</span>
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop" alt="IELTS">
+                </div>
+                <div class="course-info">
+                    <h3>IELTS Test Prep</h3>
+                    <p>Expert training for Academic and General modules to hit Band 7+ effectively.</p>
+                    <a href="signup.html" class="btn-enroll">Join Class</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-eng">Fluency</span>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop" alt="English">
+                </div>
+                <div class="course-info">
+                    <h3>Spoken English Mastery</h3>
+                    <p>Boost your confidence and fluency with real-world conversational English training.</p>
+                    <a href="signup.html" class="btn-enroll">Start Speaking</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-academic">Academic</span>
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop" alt="Academic">
+                </div>
+                <div class="course-info">
+                    <h3>O Level & A Level Coaching</h3>
+                    <p>Targeted exam preparation for Cambridge/Edexcel boards across all major subjects.</p>
+                    <a href="signup.html" class="btn-enroll">Enroll Now</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-engineering">Engineering</span>
+                    <img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?q=80&w=800&auto=format&fit=crop" alt="CAD">
+                </div>
+                <div class="course-info">
+                    <h3>AutoCAD & Revit Mastery</h3>
+                    <p>Professional 2D/3D modeling and BIM training for Architects and Engineers.</p>
+                    <a href="signup.html" class="btn-enroll">Master Tools</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-tech">Mobile</span>
+                    <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?q=80&w=800&auto=format&fit=crop" alt="Android">
+                </div>
+                <div class="course-info">
+                    <h3>Android App Development</h3>
+                    <p>Learn Java/Kotlin and Android Studio to build and publish your own apps.</p>
+                    <a href="signup.html" class="btn-enroll">Start Coding</a>
+                </div>
+            </article>
+
+            <article class="course-card">
+                <div class="course-img-container">
+                    <span class="badge-category bg-safety">Global Safety</span>
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop" alt="Safety">
+                </div>
+                <div class="course-info">
+                    <h3>NEBOSH Safety Courses</h3>
+                    <p>Get internationally recognized safety certifications for global career growth.</p>
+                    <a href="signup.html" class="btn-enroll">Get Certified</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+<footer class="mastery-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 footer-column">
+                    <img src="ABID KHAN.png" width="60" height="60" class="brand-logo-footer">
+                    <h5>Abid Khan Hub</h5>
+                    <p class="text-secondary pe-lg-5">
+                        Architecting the future of global education through technology, spiritual growth, and professional excellence.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 footer-column">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="blog.html">Expert Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 footer-column">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="contact.html">Help Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 footer-column">
+                    <h5>Connect Globally</h5>
+                    <p class="text-secondary small mb-4">Direct access to the Hub office via WhatsApp.</p>
+                    <a href="https://wa.me/923497469638" class="btn-whatsapp-master">
+                        <span>Message on WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright-section">
+                <p>© 2025 Abid Khan’s E-Learning Hub. All Rights Reserved. <br> 
+                <span style="color: var(--primary-blue); font-weight: 600;">Global Education Architect</span></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
